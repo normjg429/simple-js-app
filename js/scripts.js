@@ -9,9 +9,9 @@ let pokemonList = [
 for (let i=0; i < pokemonList.length; i++) {
   //added a conditional 'if' statement to find items that have height greater thatn 6
   if (pokemonList[i].height > 6){
-      document.write(pokemonList[i].name + '(height:' + pokemonList[i].height + ')' + ' - Wow, that’s big!');
+      document.write("<p>" + pokemonList[i].name + ' (height:' + pokemonList[i].height + ')' + ' - Wow, that’s big!' + "<p>");
   //the else statement returns the rest of the items without the special message  
   }else {
-      document.write(pokemonList[i].name + '(height:' + pokemonList[i].height + ')');
+      document.write( "<p>" + pokemonList[i].name + ' (height:' + pokemonList[i].height + ')' + "<p>");
   }
 }
